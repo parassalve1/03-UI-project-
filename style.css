@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@500&family=Langar&family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Nunito', sans-serif ;
+    text-decoration: none;
+    font-style: normal;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+body{
+    background-color: springgreen;
+}
+/* ++++++++++++++++++++++section-1+++++++++++++++++++*/
+
+
+
+.section-1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.section-1 .one{
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    background:#f0eee0 ;
+   
+}
+
+.section-1 .one .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px;
+    width: 50%;
+    margin: auto;
+    border-radius: 30px;
+    background-color:springgreen ;
+    position: relative;
+}
+
+.section-1 .one .header h4{
+    background: #fff;
+    color: #000;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    padding: 7px 15px;
+    cursor: default;
+    transition: 0.5s;
+}
+.section-1 .one .header:hover{
+    cursor: url('./icons8-cursor-24.png') ,auto;
+    
+}
+.section-1 .one .header h4:hover{
+    cursor:  url('./samll-hand.png'), auto;
+    color: #fff;
+    background: transparent;
+    
+}
+.section-1 .one .header h4 img{
+    position: absolute;
+    height: 55px;
+    bottom: 0;
+    left: 47%;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: .5s;
+}
+.section-1 .one .header h4 img:hover{
+    scale: 1.1;
+}
+
+.section-1 .one .main-text{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-1 .one .main-text .heading h1{
+    font-size: 19vw;
+    font-weight: bolder;
+    color: springgreen;
+    font-family: langar;
+    position: relative;
+}
+
+.section-1 .one .main-text .heading .moving{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 520px;
+    right: 8%;
+}
+
+
+.section-1 .one .main-text .heading h2{
+    color: springgreen;
+    font-size: 2.8vw;
+    font-family: langar;
+}
+
+/* ++++++++++++++++++++++section-2+++++++++++++++++++*/
+
+.section-2 .two{
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 20px;
+    gap: 50px;
+    animation: move 10s linear infinite;
+    
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+
+/* ++++++++++++++++++++++section-3+++++++++++++++++++*/
+
+.section-3{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+   
+   
+}
+.section-3 .plane{
+    height: 65px;
+    position: absolute;
+    right: 0;
+    top: 0;
+} 
+
+.section-3 .three{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background: #f0eee0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+}
+
+.section-3 .three .main-text1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: #f0eee0;
+    background: springgreen;
+    
+}
+.section-3 .three .main-text1 h1{
+    font-size: 9vw;
+    font-family: langar;
+}
+
+
+/*======================section-4=================*/
+
+.section-4{
+    min-height: 100vh;
+    width: 100%;
+}
+.section-4 .projects{
+    color: white;
+    margin-left: 30px;
+    padding: 20px;
+    position: relative;
+}
+
+.section-4 .projects::before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: 0;
+    height: 100%;
+    width: 85%;
+    border-top: 2px solid #f0eee0;
+}
+
+.section-4 .four{
+    min-height: 100vh;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    background: #f0eee0;
+}
+
+.section-4 .one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+    margin: 50px 0;
+}
+
+.section-4 .one .right img{
+    height: 350px;
+    width: 250px;
+    padding: 20px;
+}
+.section-4 .one .right{
+    display: flex;
+    background-color: white;
+    border: 2px solid springgreen;
+    border-radius: 30px;
+    height: 350px;
+    width: 450px;
+}
+
+.section-4 .one .right p{
+    font-size: 11px;
+    padding: 20px;
+    width: 100%;
+    border-left: 1px solid springgreen ;
+}
+
+.section-4 .one .left h1{
+    color: springgreen;
+    font-size: 5vw;
+    font-family: langar;
+}
+
+.section-4 .one .left h3{
+    color: springgreen;
+   font-family: langar;
+    font-size: 2vw;
+    margin: 10px 0;
+}
+
+.section-4 .one .left button{
+    padding:10px 30px;
+    border-style: none;
+    outline-style: none;
+    border: 1px solid springgreen;
+    border-radius: 30px;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+.section-4 .one .left button:hover{
+    color: #f0eee0;
+    background: springgreen;
+}
+
+/* +++++++++++++++++section-5++++++++++++++++ */
+
+
+.section-5{
+    height: 50vh;
+    width: 100%;
+    background: #f0eee0;
+}
+.section-5 h1{
+    font-size: 7vw;
+    padding: 20px;
+    color: springgreen;
+    margin-left: 50px ;
+    font-family: langar;
+    text-transform: uppercase;
+} 
+
+.section-5 .five{
+    background-color: springgreen;
+    display: flex;
+    padding: 10px;
+}
+
+.section-5 .five .slide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    animation: move 30s linear infinite;
+}
+.section-5 .five .slide img{
+    height: 200px;
+    width: 200px;
+    margin: 0 100px;
+}
